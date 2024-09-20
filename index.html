@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Choinka</title>
+		<script src='script.js' defer async></script>
+		<link href='style.css' rel='stylesheet'>
+		<meta charset='utf-8'>
+	</head>
+	<body>
+		<main>
+			<div>
+			<p class='title'>choinka.js</p>
+			<p>darmowy generator choinek na święta (w wielu językach)</p>
+	
+			</div>
+			<p id='statLabel'></p>
+
+			<div id="main">
+			</div>
+			<div class='inputs'>
+				<label>rozmiar</label>
+				<input id="heightInput" type="number" value=10>
+			</div>
+			<div class='inputs'>
+				<label>min</label>
+				<input id="randomRangeMinInput" type='number' value=33>
+				<label>max</label>
+				<input id="randomRangeMaxInput" type='number' value=126>
+			</div>
+			<div class='inputs'>
+				<button id='copyButton' onclick="treeToClipboard()">skopiuj choinkę</button>
+				<button onclick='drawTree(heightInput.value,randomRangeMinInput.value,randomRangeMaxInput.value)'>nowa choinka</button>
+				<button id='autoButton' onclick='auto()'>auto choinka (off)</button>
+			</div>
+			<p id="errorLabel"></p>
+			<p>autor tego jakże rewolucyjnego programu - robert pławski 2024</p>
+		
+		</main>
+	
+	</body>
+</html>
