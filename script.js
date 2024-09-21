@@ -71,7 +71,7 @@ const drawTree = (height = 8, randomRangeMin = 92, randomRangeMax = 33, separato
 		element.innerText = result
 		// dodaje długość jednego wiersza do sumy
 		sum += result.length
-
+		// dodaje bez spacji długość jednego wiersza do sumy
 		sumNoSpaces += result.trim().length;
 
 		// dodaje rozmiar (w bajtach) jednego wiersza do sumy rozmiaru
